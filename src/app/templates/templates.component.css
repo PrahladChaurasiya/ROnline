@@ -43,6 +43,7 @@ text-decoration: none;
 		
 		.hover-expand:hover {
 			transform: scale(1.1);
+			z-index: 2;
 		}
 		
 		.hover-display {
@@ -52,3 +53,5 @@ text-decoration: none;
 		.hover-expand:hover .hover-display {
 			display: block;
 		}
+
+		

@@ -7,7 +7,7 @@ import{HomeComponent} from './home/home.component';
 const routes: Routes = [
   {path: 'templates', component: TemplatesComponent},
   { path:'form1', component:Form1Component},
-  {path:'home',component:HomeComponent}
+  {path:'**',component:HomeComponent}
 ];
 
 @NgModule({
