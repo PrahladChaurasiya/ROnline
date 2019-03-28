@@ -1,0 +1,180 @@
+<div >
+
+    <div class = "Navigation text-upppercase"><a id= "top"></a>
+          <nav>
+          <ul class="topnav">
+                  <li id = "logo" style ="font-family : Lobster"><a class="active" href="#">ResumeOnline</a></li>
+          
+          
+          
+                  <li class="right"><a onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</a></li>
+          
+           <li class ="right"><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign In</a></li>
+          
+          </ul>	 
+  </nav>
+       
+       
+      </div>
+              
+              
+    <!--  form -->
+  <form   id="msform" name ="msform" action ="personalDetails"  method="post">
+    <!-- progressbar -->
+    <ul id="progressbar">
+         <li class="active">Personal Details</li>
+         <li>	Educational Details</li>
+         <li>Technical Experience</li>
+             <li>Language and Technologies</li>
+              <li>Achievements</li>
+              <li>Other Skills</li>
+    </ul>
+    
+    <!-- Personal Details -->
+    
+    <fieldset>
+      <h2 class="fs-title">Personal Details</h2>
+      <h3 class="fs-subtitle"></h3>
+      
+          <input name="firstname"  class ="required" required type="text" placeholder="First Name*"  style="width: 30%;" />
+          <input name="middlename" type="text" placeholder="Middle Name"  style="width: 30%;" />
+          <input name="lastname" type="text" placeholder="Last Nmae*" class="required" style="width: 30%;" required/>
+          <input name ="email"  type="text" Placeholder="Email*"  class="required " style="width: 45%;" required required/>
+          <input name ="contact"  type="text" Placeholder ="Contact Number*" class="required" size="13" style="width: 45%;" required/>
+          <input name ="address" type="text" Placeholder = " Permanant Adress*" class= "required" style="width: 90%; height: 30%;" required/>
+          <input name ="city" type="text" placeholder="City*" class ="required" size="15" style="width: 30%;" required/>
+          <input name ="state" type="text" placeholder="State*" class ="required" size="10" style="width: 30%;" required/>
+          <input name ="country" type="text" placeholder="Country*" class ="required" size="10" style="width: 30%;" required/>
+          <input type="button"  name="next" class="next action-button" value="Next" />
+          </fieldset>
+         
+          
+          <!-- Educational Details -->
+          
+    <fieldset >
+      <h2 class="fs-title">Educational Details</h2>
+      <h3 class="fs-subtitle"></h3>
+      
+      <!-- High School -->
+      
+          <div class =""> 
+               <input name = "hc" type="text" value="High School" readonly class ="required" style="width:90%; background:silver; cursor :pointer;"/>
+               <input name ="hs" type ="text" placeholder ="Percentage/CGPA*" required class = "required"style="width:30%;"/>
+               <input name ="hb" type= "text" placeholder ="Board/University*" required class ="required"style="width:30%;"/>
+               <input name = "hy" type ="text" placeholder = "Graduation Year*" required class = "required"style="width:30%;"/>
+          </div>
+          <br><br>
+          
+          <!-- Higher Secondary -->
+          <div class ="">
+               <input name = "hsc" type="text" value="Higher Secondary" readonly class ="required" style="width:90%; background:silver; cursor :pointer;"/>
+               <input name ="hss" type ="text" placeholder ="Percentage/CGPA*" required class = "required"style="width:30%;"/>
+               <input name ="hsb" type= "text" placeholder ="Board/University*" required class ="required"style="width:30%;"/>
+               <input name = "hsy" type ="text" placeholder = "Graduation Year*" required class = "required"style="width:30%;"/>
+          </div>
+          <br><br>
+          
+          <!-- UG -->
+          <div class ="">
+              <input name = "ugc" type="text" value="Under Graduate Course" readonly class ="required" style="width:90%; background:silver; cursor :pointer;"/>
+              <input name ="s" type ="text" placeholder ="Percentage/CGPA*" required class = "required"style="width:30%;"/>
+              <input name ="university" type= "text" placeholder ="Board/University*" required class ="required"style="width:30%;"/>
+              <input name = "year" type ="text" placeholder = "Graduation Year*" required class = "required"style="width:30%;"/>
+          </div>
+         
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    
+    <!-- Technical Experience -->
+      <fieldset id= "projects">
+      <h2 class="fs-title">Technical Experience</h2>
+      <h3 class="fs-subtitle">Projects</h3>
+          <div class ="project">
+              <input name ="p1" type ="text" placeholder="Project Name*" required class="required"/>
+              <textarea name ="pd1"   style="height:80px; font-size:10pt;" required class ="required"> Your Contribution* </textarea>
+          </div>
+          <br><br>
+          
+         <div class ="project">
+             <input name ="p2" type ="text" placeholder="Project Name" class="required"/>
+             <textarea name ="pd2"   style="height:80px; font-size:10pt;" class ="required"> Your Contribution </textarea>
+         </div>
+         
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    
+    <!-- Language and Technologies -->
+    
+      <fieldset id =LandTs>
+      <h2 class="fs-title">Language and Technologies</h2>
+      <h3 class="fs-subtitle">Language</h3>
+          <div class="LandT">
+              <input name ="lt1" type = "text" placeholder="Language/Technology*" required class ="required" style="width:45%;"/>
+              <select name ="l1" style="width:45%;">
+                  <option value="beginner">Beginner</option>
+                  <option value="intermediate">Intermediate</option>
+                  <option value="advanced">Advanced</option>
+                  <option value="expert">Expert</option>
+              </select>
+              <br><br>
+          
+              <input name ="lt2" type = "text" placeholder="Language/Technology" class ="required" style="width:45%;"/>
+              <select name ="l2" style="width:45%;">
+                   <option value="beginner">Beginner</option>
+                   <option value="intermediate">Intermediate</option>
+                   <option value="advanced">Advanced</option>
+                   <option value="expert">Expert</option>
+               </select>
+                <br><br>
+          
+              <input name ="lt3" type = "text" placeholder="Language/Technology" class ="required" style="width:45%;"/>
+              <select name ="l3" style="width:45%;">
+                   <option value="beginner">Beginner</option>
+                   <option value="intermediate">Intermediate</option>
+                   <option value="advanced">Advanced</option>
+                   <option value="expert">Expert</option>
+              </select>
+              <br><br>
+        </div>
+           
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    
+    <fieldset id= "achievements">
+      <h2 class="fs-title"> Achievements and Interests</h2>
+      <h3 class="fs-subtitle">Achievements</h3>
+          <div class ="achievements">
+  
+              <textarea name ="a1"   style="height:50px; font-size:10pt;" required class ="required"> Describe Briefly* </textarea>
+              <textarea name ="a2"   style="height:50px; font-size:10pt;" class ="required"> Describe Briefly </textarea>
+              <textarea name ="a3"   style="height:50px; font-size:10pt;" class ="required"> Describe Briefly </textarea>
+          </div>
+          <h3 class="fs-subtitle">Area of your interest</h3>
+          <div class ="Interest">
+  
+              <textarea name ="i1"  required  style="height:80px; font-size:10pt;" class ="required"> Describe Briefly* </textarea>
+          
+          </div>
+          <br><br>
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    
+    
+    <fieldset id ="skills">
+      <h2 class="fs-title">Other Skills</h2>
+      <h3 class="fs-subtitle"></h3>
+          <div class="skill">
+                 <textarea name ="skills"   required style="height:150px; font-size:10pt;" class ="required"> Mention your Skills (separated by comas) </textarea>
+          </div>
+          
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="submit" name="submit"  class="submit action-button" value="Submit" />
+    </fieldset>
+    
+  </form>
+  
+  </div>
