@@ -1,180 +1,199 @@
 <div >
 
-    <div class = "Navigation text-upppercase"><a id= "top"></a>
-          <nav>
-          <ul class="topnav">
-                  <li id = "logo" style ="font-family : Lobster"><a class="active" href="#">ResumeOnline</a></li>
-          
-          
-          
-                  <li class="right"><a onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</a></li>
-          
-           <li class ="right"><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign In</a></li>
-          
-          </ul>	 
-  </nav>
-       
-       
-      </div>
-              
-              
-    <!--  form -->
-  <form   id="msform" name ="msform" action ="personalDetails"  method="post">
-    <!-- progressbar -->
-    <ul id="progressbar">
-         <li class="active">Personal Details</li>
-         <li>	Educational Details</li>
-         <li>Technical Experience</li>
-             <li>Language and Technologies</li>
-              <li>Achievements</li>
-              <li>Other Skills</li>
-    </ul>
-    
-    <!-- Personal Details -->
-    
-    <fieldset>
-      <h2 class="fs-title">Personal Details</h2>
-      <h3 class="fs-subtitle"></h3>
-      
-          <input name="firstname"  class ="required" required type="text" placeholder="First Name*"  style="width: 30%;" />
-          <input name="middlename" type="text" placeholder="Middle Name"  style="width: 30%;" />
-          <input name="lastname" type="text" placeholder="Last Nmae*" class="required" style="width: 30%;" required/>
-          <input name ="email"  type="text" Placeholder="Email*"  class="required " style="width: 45%;" required required/>
-          <input name ="contact"  type="text" Placeholder ="Contact Number*" class="required" size="13" style="width: 45%;" required/>
-          <input name ="address" type="text" Placeholder = " Permanant Adress*" class= "required" style="width: 90%; height: 30%;" required/>
-          <input name ="city" type="text" placeholder="City*" class ="required" size="15" style="width: 30%;" required/>
-          <input name ="state" type="text" placeholder="State*" class ="required" size="10" style="width: 30%;" required/>
-          <input name ="country" type="text" placeholder="Country*" class ="required" size="10" style="width: 30%;" required/>
-          <input type="button"  name="next" class="next action-button" value="Next" />
-          </fieldset>
-         
-          
-          <!-- Educational Details -->
-          
-    <fieldset >
-      <h2 class="fs-title">Educational Details</h2>
-      <h3 class="fs-subtitle"></h3>
-      
-      <!-- High School -->
-      
-          <div class =""> 
-               <input name = "hc" type="text" value="High School" readonly class ="required" style="width:90%; background:silver; cursor :pointer;"/>
-               <input name ="hs" type ="text" placeholder ="Percentage/CGPA*" required class = "required"style="width:30%;"/>
-               <input name ="hb" type= "text" placeholder ="Board/University*" required class ="required"style="width:30%;"/>
-               <input name = "hy" type ="text" placeholder = "Graduation Year*" required class = "required"style="width:30%;"/>
-          </div>
-          <br><br>
-          
-          <!-- Higher Secondary -->
-          <div class ="">
-               <input name = "hsc" type="text" value="Higher Secondary" readonly class ="required" style="width:90%; background:silver; cursor :pointer;"/>
-               <input name ="hss" type ="text" placeholder ="Percentage/CGPA*" required class = "required"style="width:30%;"/>
-               <input name ="hsb" type= "text" placeholder ="Board/University*" required class ="required"style="width:30%;"/>
-               <input name = "hsy" type ="text" placeholder = "Graduation Year*" required class = "required"style="width:30%;"/>
-          </div>
-          <br><br>
-          
-          <!-- UG -->
-          <div class ="">
-              <input name = "ugc" type="text" value="Under Graduate Course" readonly class ="required" style="width:90%; background:silver; cursor :pointer;"/>
-              <input name ="s" type ="text" placeholder ="Percentage/CGPA*" required class = "required"style="width:30%;"/>
-              <input name ="university" type= "text" placeholder ="Board/University*" required class ="required"style="width:30%;"/>
-              <input name = "year" type ="text" placeholder = "Graduation Year*" required class = "required"style="width:30%;"/>
-          </div>
-         
-      <input type="button" name="previous" class="previous action-button" value="Previous" />
-      <input type="button" name="next" class="next action-button" value="Next" />
-    </fieldset>
-    
-    <!-- Technical Experience -->
-      <fieldset id= "projects">
-      <h2 class="fs-title">Technical Experience</h2>
-      <h3 class="fs-subtitle">Projects</h3>
-          <div class ="project">
-              <input name ="p1" type ="text" placeholder="Project Name*" required class="required"/>
-              <textarea name ="pd1"   style="height:80px; font-size:10pt;" required class ="required"> Your Contribution* </textarea>
-          </div>
-          <br><br>
-          
-         <div class ="project">
-             <input name ="p2" type ="text" placeholder="Project Name" class="required"/>
-             <textarea name ="pd2"   style="height:80px; font-size:10pt;" class ="required"> Your Contribution </textarea>
-         </div>
-         
-      <input type="button" name="previous" class="previous action-button" value="Previous" />
-      <input type="button" name="next" class="next action-button" value="Next" />
-    </fieldset>
-    
-    <!-- Language and Technologies -->
-    
-      <fieldset id =LandTs>
-      <h2 class="fs-title">Language and Technologies</h2>
-      <h3 class="fs-subtitle">Language</h3>
-          <div class="LandT">
-              <input name ="lt1" type = "text" placeholder="Language/Technology*" required class ="required" style="width:45%;"/>
-              <select name ="l1" style="width:45%;">
-                  <option value="beginner">Beginner</option>
-                  <option value="intermediate">Intermediate</option>
-                  <option value="advanced">Advanced</option>
-                  <option value="expert">Expert</option>
-              </select>
-              <br><br>
-          
-              <input name ="lt2" type = "text" placeholder="Language/Technology" class ="required" style="width:45%;"/>
-              <select name ="l2" style="width:45%;">
-                   <option value="beginner">Beginner</option>
-                   <option value="intermediate">Intermediate</option>
-                   <option value="advanced">Advanced</option>
-                   <option value="expert">Expert</option>
-               </select>
-                <br><br>
-          
-              <input name ="lt3" type = "text" placeholder="Language/Technology" class ="required" style="width:45%;"/>
-              <select name ="l3" style="width:45%;">
-                   <option value="beginner">Beginner</option>
-                   <option value="intermediate">Intermediate</option>
-                   <option value="advanced">Advanced</option>
-                   <option value="expert">Expert</option>
-              </select>
-              <br><br>
-        </div>
-           
-      <input type="button" name="previous" class="previous action-button" value="Previous" />
-      <input type="button" name="next" class="next action-button" value="Next" />
-    </fieldset>
-    
-    <fieldset id= "achievements">
-      <h2 class="fs-title"> Achievements and Interests</h2>
-      <h3 class="fs-subtitle">Achievements</h3>
-          <div class ="achievements">
-  
-              <textarea name ="a1"   style="height:50px; font-size:10pt;" required class ="required"> Describe Briefly* </textarea>
-              <textarea name ="a2"   style="height:50px; font-size:10pt;" class ="required"> Describe Briefly </textarea>
-              <textarea name ="a3"   style="height:50px; font-size:10pt;" class ="required"> Describe Briefly </textarea>
-          </div>
-          <h3 class="fs-subtitle">Area of your interest</h3>
-          <div class ="Interest">
-  
-              <textarea name ="i1"  required  style="height:80px; font-size:10pt;" class ="required"> Describe Briefly* </textarea>
-          
-          </div>
-          <br><br>
-      <input type="button" name="previous" class="previous action-button" value="Previous" />
-      <input type="button" name="next" class="next action-button" value="Next" />
-    </fieldset>
-    
-    
-    <fieldset id ="skills">
-      <h2 class="fs-title">Other Skills</h2>
-      <h3 class="fs-subtitle"></h3>
-          <div class="skill">
-                 <textarea name ="skills"   required style="height:150px; font-size:10pt;" class ="required"> Mention your Skills (separated by comas) </textarea>
-          </div>
-          
-      <input type="button" name="previous" class="previous action-button" value="Previous" />
-      <input type="submit" name="submit"  class="submit action-button" value="Submit" />
-    </fieldset>
-    
-  </form>
+    	<!-- Header -->
+		
+		<!-- Top Nav -->
+		
+		<div class = "w3-bar w3-padding w3-white w3-card-4" style = "top: 0px;">
+			<div style="">
+				<a  class = "w3-bar-item w3-hover-text-red "routerLink="/**" routerLinkActive="active">Home</a>
+				<a  class = "w3-bar-item w3-hover-text-red" routerLink="/templates" routerLinkActive="active">Templates</a>
+				<div class = "w3-right w3-bar-item w3-padding w3-padding-right">
+						<a  class = "w3-blue w3-round w3-padding" routerLink="/profile" routerLinkActive="active">My Account<i class = "fa fa-edit" style = "margin-left: 16px;"></i></a>
+				<a  class = "w3-blue w3-round w3-padding" style = "display: none;"routerLink="/form1" routerLinkActive="active">Create Resume<i class = "fa fa-edit" style = "margin-left: 16px;"></i></a>
+				<a class = "w3-red w3-round w3-padding" routerLink="/**" routerLinkActive="active">Logout<i class = "fa fa-power-off" style = "margin-left: 16px; margin-right: 16px;"></i></a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Top Nav End -->
+		<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px; position:fixed;" id="mySidebar">
+			<button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+			<a href="#" onclick = "javascript: openProfile(); return false;" class="w3-hover-light-grey w3-bar-item w3-button selected" id = "profile-link">Profile</a>
+			<a href="#" onclick = "javascript: openEducation(); return false;"  class="w3-hover-light-grey w3-bar-item w3-button" id = "education-link">Education</a>
+			<a href="#" onclick = "javascript: openWork(); return false;"  class="w3-hover-light-grey w3-bar-item w3-button" id = "work-link">Work</a>
+			<a href="#" onclick = "javascript: openSkills(); return false;"  class="w3-hover-light-grey w3-bar-item w3-button" id = "skills-link">Skills</a>
+			<a href="#" onclick = "javascript: openAchievements(); return false;"  class="w3-hover-light-grey w3-bar-item w3-button" id = "achievements-link">Achievements</a>
+			<a href="#" onclick = "javascript: openProjects(); return false;"  class="w3-hover-light-grey w3-bar-item w3-button" id = "projects-link">Projects</a>
+		</div>
+		<!-- Header End -->
+		
+		<!-- Content -->
+		<div class="w3-main w3-container" style="margin-left:200px">
+			<div class = "w3-white">
+				<button class="w3-button w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+				
+			</div>
+			
+			<div class = "w3-card-4 w3-round" style = "margin-top: 20px;">
+				<!-- Profile -->
+				<div class = "w3-container" style = "min-height: 500px;" id = "profile">
+					<h4 class = "w3-text-red">Your Personal Info</h4>
+					<div class = "w3-container">
+					
+						<p>Section Heading</p>
+						<input type = "text" style = "width: 300px; border: 0px solid black;" class = "w3-contaienr w3-light-grey w3-padding reset">
+					
+						<p>Full Name:</p>
+						<input type = "text" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">
+					
+						<p>Email:</p>
+						<input type = "email" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">
+						
+						<p>Location:</p>
+						<input type = "text" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">
+						
+						<div class = "w3-margin-top">
+								<a href = "#" onclick = "javascript: openEducation(); return false;" class = "w3-btn w3-blue w3-round">Next<i class = "fa fa-arrow-right w3-margin-left"></i></a>
+						</div>
+						
+					</div>
+					
+				</div>
+				<!-- Profile End -->
+				
+				<!-- Education -->
+				<div class = "w3-container" style = "display: none; min-height: 500px; padding-bottom: 50px;" id = "education">
+					<h4 class = "w3-text-red">Education</h4>
+					
+					<div class = "w3-container">
+					
+						<p>Section Heading</p>
+						<input type = "text" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">
+						<p>School Name</p>
+						<input type = "text" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">
+						<p>College</p>
+						<input type = "text" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">
+						<p>Degree</p>
+						<input type = "text" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">
+						<p>Major</p>
+						<input type = "text" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">
+						<p>GPA</p>
+						<input type = "text" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">
+						
+						<div class = "w3-margin-top">
+								<a href = "#" onclick = "javascript: openProfile(); return false;" class = "w3-btn w3-red w3-round"><i class = "fa fa-arrow-left w3-margin-right"></i>Back</a>
+								<a href = "#" onclick = "javascript: openWork(); return false;" class = "w3-btn w3-blue w3-round">Next<i class = "fa fa-arrow-right w3-margin-left"></i></a>
+						</div>
+						
+					</div>
+				</div>
+				<!-- Education End -->
+				
+				<!-- Work -->
+				<div class = "w3-container" style = "display: none; min-height: 500px; padding-bottom: 50px;" id = "work">
+					<h4 class = "w3-text-red">Work</h4>
+					
+					<div class = "w3-container">
+						<p>Section Heading:</p>
+						<input type = "text" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+					
+						<p>Company Name:</p>
+						<input type = "text" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+						
+						<p>Job Title:</p>
+						<input type = "text" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+					
+						<p>Job Location:</p>
+						<input type = "text" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+						<br/>
+
+						<div class = "w3-margin-top">
+								<a href = "#" onclick = "javascript: openEducation(); return false;" class = "w3-btn w3-red w3-round"><i class = "fa fa-arrow-left w3-margin-right"></i>Back</a>
+								<a href = "#" onclick = "javascript: openSkills(); return false;" class = "w3-btn w3-blue w3-round">Next<i class = "fa fa-arrow-right w3-margin-left"></i></a>
+						</div>
+
+					</div>
+				</div>
+				<!-- Work End -->
+				
+				<!-- Skills -->
+				<div class = "w3-container" style = "display: none; min-height: 500px; padding-bottom: 50px;" id = "skills">
+					<h4 class = "w3-text-red">Skills</h4>
+					
+					<div class = "w3-container">
+						<p>Section Heading:</p>
+						<input type = "text" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+					
+						<p>Skill Name:</p>
+						<input type = "text" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+						
+						<p>Skill Name:</p>
+						<input type = "text" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+					
+						<p>Skill Name:</p>
+						<input type = "text" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+						<br/>
+
+						<div class = "w3-margin-top">
+								<a href = "#" onclick = "javascript: openWork(); return false;" class = "w3-btn w3-red w3-round"><i class = "fa fa-arrow-left w3-margin-right"></i>Back</a>
+								<a href = "#" onclick = "javascript: openAchievements(); return false;" class = "w3-btn w3-blue w3-round">Next<i class = "fa fa-arrow-right w3-margin-left"></i></a>
+						</div>
+
+					</div>
+				</div>
+				<!-- Skills End -->
+
+				<!-- Achievements -->
+				<div class = "w3-container" style = "display: none; min-height: 500px; padding-bottom: 50px;" id = "achievements">
+					<h4 class = "w3-text-red">Achievements</h4>
+					
+					<div class = "w3-container">
+						<p>Section Heading:</p>
+						<input type = "text" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+					
+						<p>Achievements Name:</p>
+						<input type = "text" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+						
+						<p>Achievements Details:</p>
+						<input type = "text" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+					<br/>
+
+					<div class = "w3-margin-top">
+							<a href = "#" onclick = "javascript: openSkills(); return false;" class = "w3-btn w3-red w3-round"><i class = "fa fa-arrow-left w3-margin-right"></i>Back</a>
+							<a href = "#" onclick = "javascript: openProjects(); return false;" class = "w3-btn w3-blue w3-round">Next<i class = "fa fa-arrow-right w3-margin-left"></i></a>
+					</div>
+
+					</div>
+				</div>
+				<!-- Achievements End -->
+				
+				<!-- Projects -->
+				<div class = "w3-container" style = "display: none; min-height: 500px; padding-bottom: 50px;" id = "projects">
+					<h4 class = "w3-text-red">Projects</h4>
+					
+					<div class = "w3-container">
+						<p>Section Heading:</p>
+						<input type = "text" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+					
+						<p>Projects Name:</p>
+						<input type = "text" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+						
+						<p>Projects Details:</p>
+						<input type = "text" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+					<br/>
+
+					<div class = "w3-margin-top">
+						<a href = "#" class = "w3-btn w3-red w3-round">Add another Project<i class = "fa fa-plus w3-margin-left"></i></a>
+						<a href = "#" class = "w3-btn w3-blue w3-round">Generate Resume</a>
+					</div>
+					</div>
+				</div>
+				<!-- Projects End -->
+			</div>
+			
+
+			
+		</div>
   
   </div>
