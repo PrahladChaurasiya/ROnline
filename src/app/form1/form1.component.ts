@@ -13,6 +13,8 @@ export class Form1Component implements OnInit {
     this.loadScript('http://thecodeplayer.com/uploads/js/jquery-1.9.1.min.js');
     this.loadScript('http://thecodeplayer.com/uploads/js/jquery.easing.min.js');
     this.loadScript('../assets/js/form.js');
+    
+
   }
   public loadScript(url: string) {
     const body = <HTMLDivElement> document.body;
