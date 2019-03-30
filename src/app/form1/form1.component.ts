@@ -14,6 +14,7 @@ export class Form1Component implements OnInit {
     this.loadScript('http://thecodeplayer.com/uploads/js/jquery.easing.min.js');
     this.loadScript('../assets/js/form.js');
     
+    
 
   }
   public loadScript(url: string) {
