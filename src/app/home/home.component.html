@@ -44,10 +44,10 @@
         <div class = "w3-container"  style = "margin-top: 5%;" id = "login-div">
           <form action = "/login_page.php">
             <div style = "width: 70%; margin-left: auto; margin-right: auto;" class = "w3-white w3-round w3-padding-large w3-card-4 hidden ">
-              <p style = "text-align: left;">Username or email</p>
-              <input placeholder = "Username or email" type = "text" class = "w3-light-grey w3-padding w3-round w3-text-grey w3-small" style = "border: 0px solid black; text-align: left; width: 100%;" required>
+              <p style = "text-align: left;">Username </p>
+              <input placeholder = "Username" type = "text" class = "w3-light-grey w3-padding w3-round w3-text-grey w3-small" style = "border: 0px solid black; text-align: left; width: 100%;" required>
               <p style = "text-align: left;">Password</p>
-              <input placeholder = "Password" type = "password" class = "w3-padding w3-light-grey w3-text-grey w3-small" style = "border: 0px solid black; text-align: left; width: 100%;" required> <br>
+              <input placeholder = "Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" type = "password" class = "w3-padding w3-light-grey w3-text-grey w3-small" style = "border: 0px solid black; text-align: left; width: 100%;" required> <br>
               <button class = "w3-btn w3-blue w3-round w3-margin-top" style = "width: 100%;" type = "submit"><a>Login</a></button>
               <a class = "w3-right w3-small w3-margin-top w3-hover-text-red" href = "#" onclick = "javascript: openForgotPassword(); return false;">Forgot password?</a>
               <p>Or <a href = "#" onclick = "javascript: openSignUp(); return false;" class = "w3-text-blue">Sign Up</a> using </p>
@@ -66,11 +66,12 @@
               <p style = "text-align: left;">Username</p>
               <input placeholder = "Username" type = "text" class = "w3-light-grey w3-padding w3-round w3-text-grey w3-small" style = "border: 0px solid black; text-align: left; width: 100%;" required>
               <p style = "text-align: left;">Email</p>
-              <input placeholder = "Email" type = "email" class = "w3-light-grey w3-padding w3-round w3-text-grey w3-small" style = "border: 0px solid black; text-align: left; width: 100%;" required>
+              <input  placeholder = "Email" type = "email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class = "w3-light-grey w3-padding w3-round w3-text-grey w3-small" style = "border: 0px solid black; text-align: left; width: 100%;" required>
               <p style = "text-align: left;">Password</p>
-              <input placeholder = "Password" type = "password" class = "w3-padding w3-light-grey w3-text-grey w3-small" style = "border: 0px solid black; text-align: left; width: 100%;" required> <br>
+              <input placeholder = "Password" type = "password" id="password" class = "w3-padding w3-light-grey w3-text-grey w3-small" style = "border: 0px solid black; text-align: left; width: 100%;" required> <br>
               <p style = "text-align: left;">Confirm Password</p>
-              <input placeholder = "Password" type = "password" class = "w3-padding w3-light-grey w3-text-grey w3-small" style = "border: 0px solid black; text-align: left; width: 100%;" required> <br>
+              <input placeholder = "Password" type = "password" id="confirm_password" onkeyup='check();'class = "w3-padding w3-light-grey w3-text-grey w3-small" style = "border: 0px solid black; text-align: left; width: 100%;" required> <br>
+              <span id='message'></span>
               <button class = "w3-btn w3-blue w3-round w3-margin-top" style = "width: 100%;" type = "submit"><a>Sign Up</a></button>
             
               <div class = "w3-center w3-margin-bottom w3-margin-top">
@@ -86,7 +87,7 @@
           <form action = "/forgot_password_page.php">
             <div style = "width: 70%; margin-left: auto; margin-right: auto;" class = "w3-white w3-round w3-padding-large w3-card-4 hidden">
               <a href = "javascript: return false;" style = "cursor: default; text-align: left;">Enter your email</a>
-              <input placeholder = "Email" type = "email" class = "w3-light-grey w3-padding w3-round w3-text-grey w3-small w3-margin-top" style = "border: 0px solid black; text-align: left; width: 100%;" required>
+              <input placeholder = "Email" type = "email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class = "w3-light-grey w3-padding w3-round w3-text-grey w3-small w3-margin-top" style = "border: 0px solid black; text-align: left; width: 100%;" required>
               <button type = "submit" class = "w3-blue w3-btn w3-margin-top w3-margin-bottom w3-round"><a>Submit</a></button><br>
               <a href = "#" class = "w3-hover-text-blue w3-round" style = "width: 100%;" onclick="javascript: openLogin(); return false;">Go back to login page</a>
             </div>

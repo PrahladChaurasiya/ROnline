@@ -64,3 +64,35 @@ function openSignUp() {
 			};
 			};
 			animateHTML().init();
+
+			// To check password and confirm password fields are same
+			var check = function() {
+				if (document.getElementById('password').value ==
+				  document.getElementById('confirm_password').value) {
+				  document.getElementById('message').style.color = 'green';
+				  document.getElementById('message').innerHTML = 'Passwords Matched';
+				} else {
+				  document.getElementById('message').style.color = 'red';
+				  document.getElementById('message').innerHTML = 'Passwords Not Matched ';
+				}
+			  }
+
+//Email Validation
+
+const signUpForm = document.getElementById('signup');
+const emailField = document.getElementById('emailField');
+const okButton = document.getElementById('okButton');
+  
+emailField.addEventListener('keyup', function (event) {
+  isValidEmail = emailField.checkValidity();
+  
+  if ( isValidEmail ) {
+    okButton.disabled = false;
+  } else {
+    okButton.disabled = true;
+  }
+});
+  
+okButton.addEventListener('click', function (event) {
+  signUpForm.submit();
+});
