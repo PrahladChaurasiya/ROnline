@@ -118,7 +118,7 @@ function addSchool() {
     div.innerHTML =
         '<div class="w3-half">\
         <p>School Name</p>\
-        <input name = "schoolname" type = "text" placeholder="e.g; Lakshmi Narain College Of Technology" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">\
+        <input name = "institutename" type = "text" placeholder="e.g; Lakshmi Narain College Of Technology" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">\
     </div>\
     <div class="w3-half">\
         <p>School Location</p>\
@@ -133,16 +133,12 @@ function addSchool() {
             <input name="major[]"type = "text" placeholder="e.g; Computer Science "style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">\
     </div>\
     <div class="w3-half">\
-            <p>Start Date</p>\
-            <input name="startdate[]" type = "text" placeholder="e.g; MM/YY " style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">\
+            <p>Academic Session</p>\
+            <input name="academicsession[]" type = "text" placeholder="e.g; July 2015 - June 2019 " style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">\
     </div>\
     <div class="w3-half">\
-            <p>End Date</p>\
-            <input name= "enddate[]"type = "text" placeholder="e.g; MM/YY " style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">\
-    </div>\
-    <div >\
-            <p>GPA</p>\
-            <input name="gpa[]"type = "text" placeholder="e.g; 8.5" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">\
+            <p>Score</p>\
+            <input name="gpa[]"type = "text" placeholder="e.g; 8.5 or 85%" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">\
     </div>\
             <input class = "w3-btn w3-red w3-round w3-margin-top " type="button" value="Add School" onclick="addSchool()">\
             <input class = "w3-btn w3-blue w3-round w3-margin-top w3-margin-left" type="button" value="Remove School" onclick="removeSchool(this)">';
