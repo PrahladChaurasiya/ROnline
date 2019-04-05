@@ -7,6 +7,7 @@ import { TemplatesComponent } from './templates/templates.component';
 import { Form1Component } from './form1/form1.component';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
+import { Form2Component } from './form2/form2.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ProfileComponent } from './profile/profile.component';
     TemplatesComponent,
     Form1Component,
     HomeComponent,
-    ProfileComponent
+    ProfileComponent,
+    Form2Component
   ],
   imports: [
     BrowserModule,

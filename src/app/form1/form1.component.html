@@ -4,7 +4,7 @@
 		
 		<!-- Top Nav -->
 		
-		<div class = "w3-bar w3-padding w3-white w3-card-4" style = "top: 0px; position: fixed; ">
+		<div class = "w3-bar w3-padding w3-white " style = "top: 0px; position: fixed; ">
 			<div style="">
 				<a  class = "w3-bar-item w3-hover-text-red "routerLink="/**" routerLinkActive="active">Home</a>
 				<a  class = "w3-bar-item w3-hover-text-red" routerLink="/templates" routerLinkActive="active">Templates</a>
@@ -17,7 +17,7 @@
 		</div>
 		
 		<!-- Top Nav End -->
-		<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="top :60px; width:200px; position:fixed;" id="mySidebar">
+		<div class="w3-sidebar w3-bar-block w3-collapse  w3-animate-left" style="top :60px; width:200px; position:fixed;" id="mySidebar">
 			<button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
 			<a href="#" onclick = "javascript: openProfile(); return false;" class="w3-hover-light-grey w3-bar-item w3-button selected" id = "profile-link">Profile</a>
 			<a href="#" onclick = "javascript: openEducation(); return false;"  class="w3-hover-light-grey w3-bar-item w3-button" id = "education-link">Education</a>
@@ -36,7 +36,7 @@
 				
 			</div>
 			
-			<div class = "w3-card-4 w3-round" style = "margin-top: 60px;">
+			<div class = " w3-round" style = "margin-top: 60px;">
 				<!-- Profile -->
 				<div class = "w3-container" style = "min-height: 600px;" id = "profile">
 					<h4 class = "w3-text-red">Your Personal Info</h4>
@@ -63,7 +63,7 @@
 						<p>Address:</p>
 						<input name = "address" type = "text" placeholder="e.g; 26,Baker Street,Bhopal,Madhya Pradesh"style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">
 					</div>
-					
+					<br/>
 						<div class = "w3-margin-top">
 								<a href = "#" onclick = "javascript: openEducation(); return false;" class = "w3-btn w3-blue w3-round">Next<i class = "fa fa-arrow-right w3-margin-left"></i></a>
 						</div>
@@ -74,7 +74,7 @@
 				<!-- Profile End -->
 				
 				<!-- Education -->
-				<div class = "w3-container" style = "display: none; min-height: 500px; padding-bottom: 50px;" id = "education">
+				<div class = "w3-container" style = "display: none; min-height: 500px; padding-bottom: 50px;" disabled id = "education">
 					<h4 class = "w3-text-red">Education</h4>
 					
 					<p>Section </p>
@@ -118,6 +118,7 @@
 						
 						
 					</div>
+					<br/>
 					<div class = "w3-margin-top">
 						<a href = "#" onclick = "javascript: openProfile(); return false;"  class = "w3-btn w3-red w3-round w3-margin-right"><i class = "fa fa-arrow-left w3-margin-right" ></i>Back</a>
 						<a href = "#" onclick = "javascript: openWork(); return false;" class = "w3-btn w3-blue w3-round">Next<i class = "fa fa-arrow-right w3-margin-left"></i></a>

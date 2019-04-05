@@ -42,12 +42,12 @@
       </div>
       <div class = "w3-half w3-padding">
         <div class = "w3-container"  style = "margin-top: 5%;" id = "login-div">
-          <form action = "/login_page.php">
+          <form method="GET">
             <div style = "width: 70%; margin-left: auto; margin-right: auto;" class = "w3-white w3-round w3-padding-large w3-card-4 hidden ">
               <p style = "text-align: left;">Username </p>
               <input placeholder = "Username" type = "text" class = "w3-light-grey w3-padding w3-round w3-text-grey w3-small" style = "border: 0px solid black; text-align: left; width: 100%;" required>
               <p style = "text-align: left;">Password</p>
-              <input placeholder = "Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" type = "password" class = "w3-padding w3-light-grey w3-text-grey w3-small" style = "border: 0px solid black; text-align: left; width: 100%;" required> <br>
+              <input placeholder = "Password" type = "password" class = "w3-padding w3-light-grey w3-text-grey w3-small" style = "border: 0px solid black; text-align: left; width: 100%;" required> <br>
               <button class = "w3-btn w3-blue w3-round w3-margin-top" style = "width: 100%;" type = "submit"><a>Login</a></button>
               <a class = "w3-right w3-small w3-margin-top w3-hover-text-red" href = "#" onclick = "javascript: openForgotPassword(); return false;">Forgot password?</a>
               <p>Or <a href = "#" onclick = "javascript: openSignUp(); return false;" class = "w3-text-blue">Sign Up</a> using </p>
@@ -61,7 +61,7 @@
         </div>
         
         <div class = "w3-container" style = "display: none; margin-top: 5%;" id = "signup-div">
-          <form action = "/signup_page.php">
+          <form action = "#">
             <div style = "width: 70%; margin-left: auto; margin-right: auto;" class = "w3-white w3-round w3-padding-large w3-card-4 hidden">
               <p style = "text-align: left;">Username</p>
               <input placeholder = "Username" type = "text" class = "w3-light-grey w3-padding w3-round w3-text-grey w3-small" style = "border: 0px solid black; text-align: left; width: 100%;" required>
