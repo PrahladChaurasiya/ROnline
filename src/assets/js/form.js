@@ -154,7 +154,7 @@
 					<p>Academic Session</p>\
 					<input name="academicsession[]" type = "text" placeholder="e.g; July 2015- June 2019 " style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">\
 			</div>\
-			<div >\
+			<div class="w3-half" >\
 					<p>Score</p>\
 					<input name="score[]"type = "text" placeholder="e.g; 8.5 or 85%" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">\
 			</div>\
